@@ -1,0 +1,139 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v17-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v17-latin-700.woff2') format('woff2');
+}
+
+:root {
+  --colour-brand-dark: #011c44;
+  --colour-brand-light: #2b7fff;
+  --colour-primary-light: #ffffff;
+}
+
+body {
+  color: var(--colour-brand-dark);
+  font-size: 22px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.button {
+  background-color: var(--colour-brand-dark);
+  border: 2px solid var(--colour-brand-dark);
+  border-radius: 32px;
+  color: var(--colour-primary-light);
+}
+
+.button:hover {
+  background-color: transparent;
+  color: var(--colour-brand-dark);
+}
+
+.button {
+  cursor: pointer;
+}
+
+.link {
+  color: var(--colour-brand-dark);
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+.link:hover {
+  color: var(--colour-brand-light);
+  font-weight: 700;
+}
+
+.hero-title {
+  color: var(--colour-brand-light);
+  font-family: 'Play', sans-serif;
+}
+
+.accent {
+  color: var(--colour-brand-light);
+}
+
+.text-accent {
+  font-weight: 600;
+}
+
+.text-1 {
+  font-size: 18px;
+}
+
+.text-2 {
+  font-size: 12px;
+}
+
+.second-colon-text {
+  font-family: 'Play', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.third-colon-text {
+  font-family: 'Play', sans-serif;
+  font-size: 700;
+  font-weight: 64px;
+  text-align: center;
+}
+
+.fourth-colon-text {
+  font-family: 'Play', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.fifth-colon-text {
+  font-family: 'Play', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.advantages {
+  font-size: 18px;
+  text-align: center;
+}
+
+.list-of-procedurs {
+  font-size: 22px;
+}
+
+.footer-nav {
+  font-size: 16px;
+}
+
+.data-in-save {
+  font-size: 13px;
+}
