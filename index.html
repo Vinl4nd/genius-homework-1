@@ -10,72 +10,131 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a href="index.html"><img src="./imges/logo.svg" alt="logo" /></a>
-      </nav>
-      <ul>
-        <li><a class="link" href="#about-us-section">Про нас</a></li>
-        <li>
-          <a class="link" href="#why-people-choose-us-section">Чому ми</a>
-        </li>
-        <li>
-          <a class="link" href="#our-procedurs-section">Наші процедури</a>
-        </li>
-        <li><a class="link" href="#how-to-find-us-section">Контакти</a></li>
-      </ul>
-      <!-- telephone recive icon -->
-      <!-- facebook icon -->
-      <!-- instagram icon -->
+      <div class="container">
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="index.html"><img src="./imges/logo.svg" alt="logo" /></a>
+            <ul class="nav-item">
+              <li><a class="link" href="#description-section">Про нас</a></li>
+              <li>
+                <a class="link" href="#advantages-section">Чому ми</a>
+              </li>
+              <li>
+                <a class="link" href="#procedures-section">Наші процедури</a>
+              </li>
+              <li><a class="link" href="#contact-section">Контакти</a></li>
+            </ul>
+          </nav>
+          <div class="nav-icon">
+            <svg width="32" height="32">
+              <use href="./imges/icons.svg#icon-recive-call-button"></use>
+            </svg>
+            <svg width="32" height="32">
+              <use href="./imges/icons.svg#icon-facebook-logo"></use>
+            </svg>
+            <svg width="32" height="32">
+              <use href="./imges/icons.svg#icon-instagram-logo"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
       <section class="main-section">
-        <p class="text-1">Косметологічна клініка</p>
-        <h1 class="hero-title">Beauty Zone</h1>
-        <button class="button">Замовити дзвінок</button>
-        <p class="text-2">
-          Запишись та отримай безкоштовну консультацію нашого косметолога
-        </p>
+        <div class="container">
+          <div class="main-item">
+            <p class="main-text">Косметологічна клініка</p>
+            <h1 class="hero-title">Beauty<br />Zone</h1>
+            <div class="hero-title-description">
+              <button class="button">Замовити дзвінок</button>
+              <p class="secondary-text">
+                Запишись та отримай безкоштовну <br />
+                консультацію нашого косметолога
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
-      <section id="about-us-section">
-        <h2 class="second-colon-text">
-          Перевтілюйтесь в <span class="accent">Beauty Zone!</span>
-        </h2>
-        <p>
-          Наша косметологічна клініка пропонує вам професійні послуги з догляду
-          за шкірою обличчя та тіла.
-        </p>
-        <p>
-          B <span class="text-accent">Beauty Zone</span> ми гарантуємо найвищі
-          стандарти якості та приємний сервіс. Наші косметологічні процедури та
-          препарати допоможуть вам підтримувати свою красу та молодість. З нами
-          краса назавжди!
-        </p>
-        <img src="./imges/result-photo.jpg" alt="result-photo" />
+      <section id="description-section">
+        <div class="container">
+          <div class="description-text">
+            <div class="description-container">
+              <h2 class="description-items">
+                Перевтілюйтесь в <span class="accent">Beauty Zone!</span>
+              </h2>
+              <p>
+                Наша косметологічна клініка пропонує вам професійні послуги
+                <br />
+                з догляду за шкірою обличчя та тіла.
+              </p>
+              <p>
+                B <span class="text-accent">Beauty Zone</span> ми гарантуємо
+                найвищі стандарти якості <br />
+                та приємний сервіс. Наші косметологічні процедури та препарати
+                <br />
+                допоможуть вам підтримувати свою красу та молодість. <br />
+                З нами краса назавжди!
+              </p>
+            </div>
+            <img
+              class="description-photo"
+              src="./imges/result-photo.jpg"
+              alt="result-photo"
+            />
+          </div>
+        </div>
       </section>
-      <section id="why-people-choose-us-section">
-        <h2 class="third-colon-text">
-          Чому люди <span class="accent">обирають нас</span>
-        </h2>
-        <ul class="advantages">
-          <li>
-            Всі наші косметологи мають вищу медичну освіту та стаж роботи від 5
-            років
-          </li>
-        </ul>
-        <ul class="advantages">
-          <li>
-            Використовуємо тільки професійне обладнання та косметику, перевірену
-            часом
-          </li>
-        </ul>
-        <ul class="advantages">
-          <li>
-            Наша мета - підкреслити переваги та приховати недоліки, а не
-            переробити
-          </li>
-        </ul>
+      <section id="advantages-section">
+        <div class="container">
+          <div class="advantages-container">
+            <h2 class="advantages-text advantages-title centred">
+              Чому люди <span class="accent">обирають нас</span>
+            </h2>
+            <div class="advantages">
+              <ul class="advantage-card">
+                <svg class="custom-card">
+                  <use
+                    width="48"
+                    height="48"
+                    href="./imges/icons.svg#icon-Vector-4"
+                  ></use>
+                </svg>
+                <li>
+                  Всі наші косметологи мають вищу медичну освіту та стаж роботи
+                  від 5 років
+                </li>
+              </ul>
+              <ul class="advantage-card">
+                <svg class="custom-card">
+                  <use
+                    width="48"
+                    height="48"
+                    href="./imges/icons.svg#icon-Group-46194-1"
+                  ></use>
+                </svg>
+                <li>
+                  Використовуємо тільки професійне обладнання та косметику,
+                  перевірену часом
+                </li>
+              </ul>
+              <ul class="advantage-card">
+                <svg class="custom-card">
+                  <use
+                    width="48"
+                    height="48"
+                    href="./imges/icons.svg#icon-Vector-5"
+                  ></use>
+                </svg>
+                <li>
+                  Наша мета - підкреслити переваги та приховати недоліки, а не
+                  переробити
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
-      <section id="our-procedurs-section">
+      <section id="procedures-section">
         <h2 class="fourth-colon-text">
           Наші<span class="accent"> процедури</span>
         </h2>
@@ -89,7 +148,7 @@
           <li>Очищення обличчя</li>
         </ul>
       </section>
-      <section id="how-to-find-us-section">
+      <section id="contact-section">
         <h2 class="fifth-colon-text">
           Як нас <span class="accent">знайти</span>
         </h2>
@@ -110,14 +169,14 @@
           <a href="index.html"><img src="./imges/logo.svg" alt="logo" /></a>
         </nav>
         <ul class="footer-nav">
-          <li><a class="link" href="#about-us-section">Про нас</a></li>
+          <li><a class="link" href="#description-section">Про нас</a></li>
           <li>
-            <a class="link" href="#why-people-choose-us-section">Чому ми</a>
+            <a class="link" href="#advantages-section">Чому ми</a>
           </li>
           <li>
-            <a class="link" href="#our-procedurs-section">Наші процедури</a>
+            <a class="link" href="#procedures-section">Наші процедури</a>
           </li>
-          <li><a class="link" href="#how-to-find-us-section">Контакти</a></li>
+          <li><a class="link" href="#contact-section">Контакти</a></li>
         </ul>
         <address>
           <ul class="footer-nav">
