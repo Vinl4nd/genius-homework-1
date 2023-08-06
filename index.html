@@ -27,13 +27,13 @@
           </nav>
           <div class="nav-icon">
             <svg width="32" height="32">
-              <use href="./imges/icons.svg#icon-recive-call-button"></use>
+              <use href="./imges/icons.svg#icon-recive-call-button-dark"></use>
             </svg>
             <svg width="32" height="32">
-              <use href="./imges/icons.svg#icon-facebook-logo"></use>
+              <use href="./imges/icons.svg#icon-facebook-dark"></use>
             </svg>
             <svg width="32" height="32">
-              <use href="./imges/icons.svg#icon-instagram-logo"></use>
+              <use href="./imges/icons.svg#icon-instagram-dark"></use>
             </svg>
           </div>
         </div>
@@ -96,7 +96,7 @@
                   <use
                     width="48"
                     height="48"
-                    href="./imges/icons.svg#icon-Vector-4"
+                    href="./imges/icons.svg#icon-atom"
                   ></use>
                 </svg>
                 <li>
@@ -109,7 +109,7 @@
                   <use
                     width="48"
                     height="48"
-                    href="./imges/icons.svg#icon-Group-46194-1"
+                    href="./imges/icons.svg#icon-buildings"
                   ></use>
                 </svg>
                 <li>
@@ -122,7 +122,7 @@
                   <use
                     width="48"
                     height="48"
-                    href="./imges/icons.svg#icon-Vector-5"
+                    href="./imges/icons.svg#icon-crown"
                   ></use>
                 </svg>
                 <li>
@@ -135,65 +135,113 @@
         </div>
       </section>
       <section id="procedures-section">
-        <h2 class="fourth-colon-text">
-          Наші<span class="accent"> процедури</span>
-        </h2>
-        <ul class="list-of-procedurs">
-          <li>Маски для обличчя</li>
-        </ul>
-        <ul class="list-of-procedurs">
-          <li>Ін'єкції для обличчя</li>
-        </ul>
-        <ul class="list-of-procedurs">
-          <li>Очищення обличчя</li>
-        </ul>
+        <div class="container">
+          <h2 class="procedures-text">
+            Наші<span class="accent"> процедури</span>
+          </h2>
+          <div class="procedures-container">
+            <button class="carousel-button" type="button">
+              <svg width="16" height="16">
+                <use href="./imges/icons.svg#icon-Arrow"></use>
+              </svg>
+            </button>
+            <ul class="list-of-procedurs">
+              <li class="list-item">Маски для обличчя</li>
+              <li class="list-item">Ін'єкції для обличчя</li>
+              <li class="list-item">Очищення обличчя</li>
+            </ul>
+            <button class="carousel-button" type="button">
+              <svg width="16" height="16">
+                <use href="imges/icons.svg#icon-Arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </section>
       <section id="contact-section">
-        <h2 class="fifth-colon-text">
-          Як нас <span class="accent">знайти</span>
-        </h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.4738049017565!2d30.772643577117734!3d50.506750371603026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de47397fd%3A0xc4eabfeac5ee50aa!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzQwMA!5e0!3m2!1sru!2sua!4v1689672841424!5m2!1sru!2sua"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <div class="container">
+          <h2 class="contact-text">
+            Як нас <span class="accent">знайти</span>
+          </h2>
+          <div class="contact-container">
+            <iframe
+              class="contact-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.4738049017565!2d30.772643577117734!3d50.506750371603026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de47397fd%3A0xc4eabfeac5ee50aa!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzQwMA!5e0!3m2!1sru!2sua!4v1689672841424!5m2!1sru!2sua"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <!-- form -->
+          </div>
+        </div>
       </section>
     </main>
     <footer>
-      <nav>
-        <nav>
-          <a href="index.html"><img src="./imges/logo.svg" alt="logo" /></a>
-        </nav>
-        <ul class="footer-nav">
-          <li><a class="link" href="#description-section">Про нас</a></li>
-          <li>
-            <a class="link" href="#advantages-section">Чому ми</a>
-          </li>
-          <li>
-            <a class="link" href="#procedures-section">Наші процедури</a>
-          </li>
-          <li><a class="link" href="#contact-section">Контакти</a></li>
-        </ul>
-        <address>
+      <div class="container">
+        <div class="footer-container">
+          <nav class="footer-nav">
+            <a href="index.html"><img src="./imges/logo.svg" alt="logo" /></a>
+          </nav>
           <ul class="footer-nav">
-            <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
-            <li>
-              <a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
+            <li class="footer-li">
+              <a class="footer-link" href="#description-section">Про нас</a>
             </li>
-            <li>
-              <a href="https://goo.gl/maps/5WPKLLHoT8fs13Lt8" target="_blank"
-                >Україна, м. Київ, вул. Тараса Шевченка 5</a
+            <li class="footer-li">
+              <a class="footer-link" href="#advantages-section">Чому ми</a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-link" href="#procedures-section"
+                >Наші процедури</a
               >
             </li>
+            <li><a class="footer-link" href="#contact-section">Контакти</a></li>
           </ul>
-          <a href="#" class="footer-nav">Політика конфіденційності</a>
-          <p class="data-in-save">&copy;2022 Дані захищені</p>
-        </address>
-      </nav>
+          <address class="footer-adress">
+            <ul class="footer-nav">
+              <li>
+                <a class="adress-link" href="tel:+380960000007"
+                  >+ 38 (096) 000 00 07</a
+                >
+              </li>
+              <li>
+                <a class="adress-link" href="mailto:beautyzone@gmail.com"
+                  >beautyzone@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="adress-link"
+                  href="https://goo.gl/maps/5WPKLLHoT8fs13Lt8"
+                  target="_blank"
+                  >Україна, м. Київ, вул. Тараса Шевченка 5</a
+                >
+              </li>
+              <div class="footer-icon">
+                <svg width="32" height="32">
+                  <use
+                    href="./imges/icons.svg#icon-telephone-recive-light"
+                  ></use>
+                </svg>
+                <svg width="32" height="32">
+                  <use href="./imges/icons.svg#icon-facebook-light"></use>
+                </svg>
+                <svg width="32" height="32">
+                  <use href="./imges/icons.svg#icon-instagram-light"></use>
+                </svg>
+              </div>
+            </ul>
+          </address>
+          <div class="adress-info">
+            <a class="adress-link" href="#" class="footer-nav"
+              >Політика конфіденційності</a
+            >
+            <p class="data-in-save">&copy;2022 Дані захищені</p>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

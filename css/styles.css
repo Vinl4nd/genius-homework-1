@@ -34,6 +34,7 @@
   --colour-brand-dark: #011c44;
   --colour-brand-light: #2b7fff;
   --colour-primary-light: #ffffff;
+  --colour-footer-data: #747272;
 }
 
 h1,
@@ -57,6 +58,11 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+.adress-link {
+  text-decoration: none;
+  color: var(--colour-primary-light);
 }
 
 ul {
@@ -94,7 +100,40 @@ section {
 .button {
   cursor: pointer;
 }
+
+.carousel-button {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--colour-brand-dark);
+  padding: 0;
+  cursor: pointer;
+  fill: var(--colour-brand-dark);
+}
+
+.carousel-button:hover {
+  fill: var(--colour-primary-light);
+  background-color: var(--colour-brand-light);
+  border: 1px solid var(--colour-primary-light);
+}
+
 /* link section */
+.footer-link {
+  color: var(--colour-primary-light);
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--colour-brand-light);
+  font-weight: 700;
+}
+
 .link {
   color: var(--colour-brand-dark);
   font-family: 'Roboto', sans-serif;
@@ -200,19 +239,60 @@ section {
 }
 
 /* procedures-section */
-.procedures-section {
+
+.procedures-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.procedures-text {
   font-family: 'Play', sans-serif;
   font-size: 64px;
   font-weight: 700;
   text-align: center;
 }
+
+.list-of-procedurs {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.list-item {
+  height: 456px;
+  width: 344px;
+  padding: 115px 32px 77px;
+  border-radius: 4px 120px 4px 120px;
+  background: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 47.4%,
+    rgba(1, 28, 68, 0.73) 82.66%,
+    var(--colour-brand-dark) 99.06%
+  );
+  flex-basis: calc((100% - 32px) / 3);
+}
+
 /* contact-section */
-.contact-section {
+
+.contact-container {
+  display: flex;
+  gap: 32px;
+}
+
+.contact-text {
   font-family: 'Play', sans-serif;
   font-size: 64px;
   font-weight: 700;
   text-align: center;
 }
+
+.contact-map {
+  border-radius: 32px;
+  flex-shrink: 0;
+}
+
 /* advantages section */
 
 .advantages-title .centred {
@@ -241,8 +321,15 @@ section {
 }
 
 .advantage-card {
-  max-width: 252px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 205px;
+  padding: 32px 24px;
+  max-width: 316px;
   border-radius: 32px;
+  box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
 }
 
 .advantages-list {
@@ -257,12 +344,39 @@ section {
   font-size: 22px;
 }
 /* footer */
-.footer-nav {
-  font-size: 16px;
+
+footer {
+  background-color: var(--colour-brand-dark);
+  padding: 56px;
 }
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-adress {
+  flex-grow: 1;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+.footer-icon {
+  display: flex;
+  gap: 24px;
+  color: transparent;
+}
+
 /* data section */
 .data-in-save {
   font-size: 13px;
+  color: var(--colour-footer-data);
 }
 
 .custom-card {
