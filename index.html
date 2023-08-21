@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="header-container">
           <nav class="header-nav">
@@ -25,7 +25,7 @@
               <li><a class="link" href="#contact-section">Контакти</a></li>
             </ul>
           </nav>
-          <div class="nav-icon">
+          <div class="nav-icon link">
             <svg width="32" height="32">
               <use href="./imges/icons.svg#icon-recive-call-button-dark"></use>
             </svg>
@@ -46,7 +46,7 @@
             <p class="main-text">Косметологічна клініка</p>
             <h1 class="hero-title">Beauty<br />Zone</h1>
             <div class="hero-title-description">
-              <button class="button">Замовити дзвінок</button>
+              <button class="button modal-btn-open">Замовити дзвінок</button>
               <p class="secondary-text">
                 Запишись та отримай безкоштовну <br />
                 консультацію нашого косметолога
@@ -55,7 +55,7 @@
           </div>
         </div>
       </section>
-      <section id="description-section">
+      <section class="description-section" id="description-section">
         <div class="container">
           <div class="description-text">
             <div class="description-container">
@@ -76,6 +76,21 @@
                 З нами краса назавжди!
               </p>
             </div>
+            <img
+              class="blue-star"
+              src="./imges/blue-star.jpg"
+              alt="blue-star"
+            />
+            <img
+              class="grey-star"
+              src="./imges/grey-star.jpg"
+              alt="blue-star"
+            />
+            <img
+              class="darkblue-star"
+              src="./imges/darkblue-star.jpg"
+              alt="blue-star"
+            />
             <img
               class="description-photo"
               src="./imges/result-photo.jpg"
@@ -156,7 +171,7 @@
               <li class="list-item">Ін'єкції для обличчя</li>
               <li class="list-item">Очищення обличчя</li>
             </ul>
-            <button class="carousel-button" type="button">
+            <button class="carousel-button next" type="button">
               <svg width="16" height="16">
                 <use href="imges/icons.svg#icon-Arrow"></use>
               </svg>
@@ -174,18 +189,78 @@
               class="contact-map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.4738049017565!2d30.772643577117734!3d50.506750371603026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de47397fd%3A0xc4eabfeac5ee50aa!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzQwMA!5e0!3m2!1sru!2sua!4v1689672841424!5m2!1sru!2sua"
               width="600"
-              height="450"
+              height="480"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            <!-- form -->
+            <div class="contact-form">
+              <div class="contact-modal">
+                <p class="contact-modal-undertitle-line">
+                  Запишіться
+                  <span class="modal-undertitle-line-span">безкоштовно</span> та
+                  отримайте подарунок
+                </p>
+                <form name="modal-form" autocomplete="off">
+                  <div class="contact-form-field">
+                    <label class="form-label visually-hidden" for="user-name"
+                      >Ваше ім'я та прізвище</label
+                    >
+                    <input
+                      class="form-input"
+                      type="text"
+                      id="user-name-contact"
+                      name="user-name"
+                      placeholder="Ваше ім'я та прізвище"
+                      pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
+                      required
+                    />
+                  </div>
+                  <div class="contact-form-field">
+                    <label class="form-label visually-hidden" for="user-tel"
+                      >Ваш номер телефону</label
+                    >
+                    <input
+                      class="form-input"
+                      type="tel"
+                      id="user-tel-contact"
+                      name="user-tel"
+                      placeholder="Ваш номер телефону"
+                      pattern="^\+[0-9]{12}"
+                      required
+                    />
+                  </div>
+                  <div class="contact-form-field">
+                    <label class="form-label visually-hidden" for="user-email"
+                      >Ваша електронна пошта</label
+                    >
+                    <input
+                      class="form-input"
+                      type="email"
+                      id="user-email-contact"
+                      name="user-email"
+                      placeholder="Ваша електронна пошта"
+                      required
+                    />
+                  </div>
+                  <button class="form-button button" type="submit">
+                    Записатись безкоштовно
+                  </button>
+                  <p class="form-term">
+                    Натискаючи на кнопку я погоджуюсь з
+                    <a class="form-term-link" href="#"
+                      >політикою конфіденційності</a
+                    >
+                  </p>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <div class="footer-container">
           <nav class="footer-nav">
@@ -253,5 +328,69 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+        <h2 class="modal-title">Замовити дзвінок</h2>
+        <p class="modal-undertitle-line">
+          Запишіться
+          <span class="modal-undertitle-line-span">безкоштовно</span> та
+          отримайте подарунок
+        </p>
+        <form name="modal-form" autocomplete="off">
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-name"
+              >Ваше ім'я та прізвище</label
+            >
+            <input
+              class="form-input"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Ваше ім'я та прізвище"
+              pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-tel"
+              >Ваш номер телефону</label
+            >
+            <input
+              class="form-input"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+              placeholder="Ваш номер телефону"
+              pattern="^\+[0-9]{12}"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-email"
+              >Ваша електронна пошта</label
+            >
+            <input
+              class="form-input"
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="Ваша електронна пошта"
+              required
+            />
+          </div>
+          <button class="button form-button" type="submit">
+            Записатись безкоштовно
+          </button>
+          <p class="form-term">
+            Натискаючи на кнопку я погоджуюсь з
+            <a class="form-term-link" href="#">політикою конфіденційності</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
