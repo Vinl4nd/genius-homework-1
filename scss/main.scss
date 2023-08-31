@@ -1,5 +1,10 @@
 @import './base';
 
+@import './utils/variables';
+@import './utils/fonts';
+@import './utils/utils';
+@import './utils/text';
+
 @import './components/carousel-button';
 @import './components/button';
 @import './components/link';
@@ -20,8 +25,3 @@
 @import './layouts/footer';
 @import './layouts/procedures-section';
 @import './layouts/modal';
-
-@import './utils/variables';
-@import './utils/fonts';
-@import './utils/utils';
-@import './utils/text';
