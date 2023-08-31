@@ -1,0 +1,25 @@
+.description-container {
+  display: flex;
+  gap: 32px;
+  position: relative;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__items {
+    font-family: 'Play', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    max-width: 530px;
+    line-height: 1.1;
+  }
+
+  &__photo {
+    display: flex;
+    justify-content: space-between;
+    width: 499px;
+    height: 695px;
+  }
+}

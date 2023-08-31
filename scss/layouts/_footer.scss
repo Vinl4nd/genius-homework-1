@@ -1,0 +1,40 @@
+footer {
+  position: relative;
+  background-color: var(--colour-brand-dark);
+  padding: 56px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-image: url(../imges/background-photo-1.png);
+    width: 248px;
+    height: 152px;
+    flex-shrink: 0;
+    right: 0px;
+  }
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 16px;
+    flex-grow: 1;
+  }
+
+  &__adress {
+    flex-grow: 1;
+  }
+}
+
+.footer-icon {
+  display: flex;
+  gap: 24px;
+  color: transparent;
+}

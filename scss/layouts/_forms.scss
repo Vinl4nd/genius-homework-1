@@ -1,0 +1,34 @@
+.input {
+  width: 310px;
+
+  &__control {
+    padding: 18px 32px;
+    font-size: 13px;
+    width: 100%;
+    border-radius: 32px;
+    background-color: transparent;
+    border: 1px solid var(--colour-footer-data);
+
+    &::placeholder {
+      color: var(--colour-primary-light);
+      font-size: 13px;
+    }
+
+    &:focus {
+      background-color: var(--colour-footer-data);
+    }
+  }
+}
+
+.form-term {
+  max-width: 213px;
+  font-size: 12px;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--colour-footer-data);
+
+  &__link {
+    text-underline-offset: 2px;
+    color: var(--colour-footer-data);
+  }
+}

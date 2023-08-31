@@ -1,0 +1,20 @@
+.footer-link {
+  color: var(--colour-primary-light);
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: var(--colour-brand-light);
+}
+
+.link {
+  color: var(--colour-brand-dark);
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.link:hover {
+  color: var(--colour-brand-light);
+}

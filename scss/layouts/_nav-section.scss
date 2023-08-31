@@ -1,0 +1,32 @@
+.nav-item {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+  flex-grow: 1;
+}
+
+.nav-icon {
+  display: flex;
+  gap: 32px;
+}
+
+.icons-custom {
+  display: flex;
+  gap: 32px;
+  transition: fill 0.2s;
+
+  &:hover {
+    fill: var(--colour-brand-light);
+  }
+
+  &__footer-icons-nav {
+    display: flex;
+    gap: 32px;
+    fill: var(--colour-primary-light);
+    transition: fill 0.2s;
+
+    &:hover {
+      fill: var(--colour-brand-light);
+    }
+  }
+}

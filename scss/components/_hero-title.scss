@@ -1,0 +1,15 @@
+.hero-title {
+  color: var(--colour-brand-light);
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 140px;
+  margin-bottom: 0;
+  line-height: 114px;
+  padding: 16px 0 40px;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+}
