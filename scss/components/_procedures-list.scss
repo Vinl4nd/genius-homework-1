@@ -1,9 +1,17 @@
 .list-of-procedurs {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
+  transition: transform 0.2s;
 
-  &__item {
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &__container {
+    position: relative;
+
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     height: 456px;
     width: 344px;
     border-radius: 4px 120px 4px 120px;
@@ -14,15 +22,6 @@
       var(--colour-brand-dark) 99.06%
     );
     flex-basis: calc((100% - 32px) / 3);
-  }
-
-  &__card {
-    position: relative;
-    height: 455px;
-    padding: 0 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
   }
 
   &__image {
@@ -45,5 +44,6 @@
     line-height: 1.2;
     color: var(--colour-primary-light);
     text-align: center;
+    margin: 0 auto 32px;
   }
 }

@@ -16,11 +16,22 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 126px;
-    padding-left: 116px;
+
     padding-top: 110px;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding-left: 116px;
+    }
   }
 
   &__text {
-    font-size: 18px;
+    font-size: 12px;
+    justify-content: center;
+    display: flex;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 18px;
+      display: block;
+    }
   }
 }
