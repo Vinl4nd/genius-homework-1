@@ -8,11 +8,51 @@
 .contact-container {
   display: flex;
   gap: 32px;
-  padding-left: 80px;
+  padding-left: 0;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-left: 80px;
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    flex-direction: row;
+  }
+
+  &__bottom {
+    display: block;
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
 
   &__map {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      border-radius: 32px;
+      flex-shrink: 0;
+      width: 320px;
+      margin: auto;
+      height: 500px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 600px;
+      height: 595px;
+    }
+  }
+
+  &__map-top {
     border-radius: 32px;
     flex-shrink: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
   }
 
   &__modal {
@@ -50,6 +90,22 @@
     &:hover {
       color: var(--colour-primary-light);
       border-color: var(--colour-brand-light);
+    }
+  }
+}
+
+.contact-form {
+  display: none;
+
+  @media screen and (min-width: $bp-tablet) {
+    display: block;
+  }
+
+  &__top {
+    display: block;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
     }
   }
 }

@@ -1,11 +1,17 @@
 .procedures-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
 
   &__slider {
     overflow: hidden;
+  }
+
+  &__text {
+    text-align: center;
   }
 
   &__list {
@@ -19,11 +25,4 @@
       display: flex;
     }
   }
-}
-
-.procedures-text {
-  font-family: 'Play', sans-serif;
-  font-size: 64px;
-  font-weight: 700;
-  text-align: center;
 }

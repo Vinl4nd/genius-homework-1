@@ -183,12 +183,12 @@
           </div>
         </div>
       </section>
-      <section id="procedures-section">
+      <section class="procedures-container section" id="procedures-section">
         <div class="container">
-          <h2 class="procedures-text">
+          <h2 class="procedures-container__text section__text">
             Наші<span class="text-brand-light"> процедури</span>
           </h2>
-          <div class="procedures-container">
+          <div class="procedures-container__item">
             <button
               class="procedures-container__button carousel-button prev"
               type="button"
@@ -294,11 +294,91 @@
           </div>
         </div>
       </section>
-      <!-- <section id="contact-section">
+      <section id="contact-section">
         <div class="container">
           <h2 class="contact-text">
             Як нас <span class="accent">знайти</span>
           </h2>
+          <div class="contact-container">
+            <div class="contact-form__top">
+              <div class="contact-container__modal">
+                <p class="contact-container__modal-undertitle-line">
+                  Запишіться
+                  <span class="modal-undertitle-line-span">безкоштовно</span> та
+                  отримайте подарунок
+                </p>
+                <form
+                  class="contact-container__top"
+                  name="contact-form"
+                  autocomplete="off"
+                >
+                  <div class="contact-container__contact-form-field input">
+                    <label class="input__label visually-hidden" for="user-name"
+                      >Ваше ім'я та прізвище</label
+                    >
+                    <input
+                      class="input__control"
+                      type="text"
+                      id="user-name-contact"
+                      name="user-name"
+                      placeholder="Ваше ім'я та прізвище"
+                      pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
+                      required
+                    />
+                  </div>
+                  <div class="contact-container__contact-form-field input">
+                    <label class="input__label visually-hidden" for="user-tel"
+                      >Ваш номер телефону</label
+                    >
+                    <input
+                      class="input__control"
+                      type="tel"
+                      id="user-tel-contact"
+                      name="user-tel"
+                      placeholder="Ваш номер телефону"
+                      pattern="^\+[0-9]{12}"
+                      required
+                    />
+                  </div>
+                  <div class="contact-container__contact-form-field input">
+                    <label class="input__label visually-hidden" for="user-email"
+                      >Ваша електронна пошта</label
+                    >
+                    <input
+                      class="input__control"
+                      type="email"
+                      id="user-email-contact"
+                      name="user-email"
+                      placeholder="Ваша електронна пошта"
+                      required
+                    />
+                  </div>
+                  <button
+                    class="contact-container__button button"
+                    type="submit"
+                  >
+                    Записатись безкоштовно
+                  </button>
+                  <p class="form-term">
+                    Натискаючи на кнопку я погоджуюсь з
+                    <a class="form-term__link" href="#"
+                      >політикою конфіденційності</a
+                    >
+                  </p>
+                </form>
+              </div>
+            </div>
+            <iframe
+              class="contact-container__map-top"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.4738049017565!2d30.772643577117734!3d50.506750371603026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de47397fd%3A0xc4eabfeac5ee50aa!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzQwMA!5e0!3m2!1sru!2sua!4v1689672841424!5m2!1sru!2sua"
+              width="600"
+              height="480"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
           <div class="contact-container">
             <iframe
               class="contact-container__map"
@@ -317,7 +397,11 @@
                   <span class="modal-undertitle-line-span">безкоштовно</span> та
                   отримайте подарунок
                 </p>
-                <form name="contact-form" autocomplete="off">
+                <form
+                  class="contact-container__top"
+                  name="contact-form"
+                  autocomplete="off"
+                >
                   <div class="contact-container__contact-form-field input">
                     <label class="input__label visually-hidden" for="user-name"
                       >Ваше ім'я та прізвище</label
@@ -376,7 +460,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- <footer class="footer">
       <div class="container">
