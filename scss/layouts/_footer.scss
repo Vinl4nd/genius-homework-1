@@ -32,7 +32,12 @@ footer {
 
   &__logo {
     position: relative;
-    top: -50px;
+    margin-bottom: 42px;
+    left: 5px;
+
+    @media screen and (min-width: $bp-tablet) {
+      top: -50px;
+    }
   }
 
   &__link {
