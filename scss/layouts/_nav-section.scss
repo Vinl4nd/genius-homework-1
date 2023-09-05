@@ -2,6 +2,18 @@
   display: flex;
   gap: 32px;
   transition: fill 0.2s;
+  padding-right: 0;
+
+  &__footer {
+    display: flex;
+    gap: 32px;
+    transition: fill 0.2s;
+    padding-right: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding-right: 100px;
+    }
+  }
 
   &:hover {
     fill: var(--colour-brand-light);

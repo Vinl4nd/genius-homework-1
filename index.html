@@ -53,8 +53,41 @@
           </button>
           <div class="mobile-menu">
             <button class="mobile-menu__btn-close menu-btn-close" type="button">
-              Close
+              <!-- Close -->
+              <svg width="24" height="24">
+                <use href="./imges/icons.svg#icon-icon-close"></use>
+              </svg>
             </button>
+            <nav class="mobile-menu__nav">
+              <a href="index.html"><img src="./imges/logo.svg" alt="logo" /></a>
+              <ul class="mobile-menu__nav-item">
+                <li><a class="link" href="#description-section">Про нас</a></li>
+                <li>
+                  <a class="link" href="#advantages-section">Чому ми</a>
+                </li>
+                <li>
+                  <a class="link" href="#procedures-section">Наші процедури</a>
+                </li>
+                <li><a class="link" href="#contact-section">Контакти</a></li>
+              </ul>
+              <div class="mobile-menu__nav-icon link">
+                <a href="tel:+380960000007">
+                  <svg class="icons-custom" width="32" height="32">
+                    <use href="./imges/icons.svg#icon-recive-call-button"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="icons-custom" width="32" height="32">
+                    <use href="./imges/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="icons-custom" width="32" height="32">
+                    <use href="./imges/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </div>
+            </nav>
           </div>
         </div>
       </div>
@@ -304,8 +337,8 @@
               <div class="contact-container__modal">
                 <p class="contact-container__modal-undertitle-line">
                   Запишіться
-                  <span class="modal-undertitle-line-span">безкоштовно</span> та
-                  отримайте подарунок
+                  <span class="text-brand-light">безкоштовно</span> та отримайте
+                  подарунок
                 </p>
                 <form
                   class="contact-container__top"
@@ -394,8 +427,8 @@
               <div class="contact-container__modal">
                 <p class="contact-container__modal-undertitle-line">
                   Запишіться
-                  <span class="modal-undertitle-line-span">безкоштовно</span> та
-                  отримайте подарунок
+                  <span class="text-brand-light">безкоштовно</span> та отримайте
+                  подарунок
                 </p>
                 <form
                   class="contact-container__top"
@@ -462,11 +495,13 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-container">
           <nav class="footer-container__nav">
-            <a href="index.html"><img src="./imges/logo.svg" alt="logo" /></a>
+            <a class="footer-container__logo" href="index.html"
+              ><img src="./imges/logo.svg" alt="logo"
+            /></a>
           </nav>
           <ul class="footer-container__nav">
             <li class="footer-li">
@@ -484,25 +519,27 @@
           </ul>
           <address class="footer-container__adress">
             <ul class="footer-container__nav">
-              <li>
-                <a class="adress-link" href="tel:+380960000007"
-                  >+ 38 (096) 000 00 07</a
-                >
-              </li>
-              <li>
-                <a class="adress-link" href="mailto:beautyzone@gmail.com"
-                  >beautyzone@gmail.com</a
-                >
-              </li>
-              <li>
-                <a
-                  class="adress-link"
-                  href="https://goo.gl/maps/5WPKLLHoT8fs13Lt8"
-                  target="_blank"
-                  >Україна, м. Київ, вул. Тараса Шевченка 5</a
-                >
-              </li>
-              <div class="icons-custom">
+              <div class="footer-container__link">
+                <li>
+                  <a class="adress-link" href="tel:+380960000007"
+                    >+ 38 (096) 000 00 07</a
+                  >
+                </li>
+                <li>
+                  <a class="adress-link" href="mailto:beautyzone@gmail.com"
+                    >beautyzone@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="adress-link"
+                    href="https://goo.gl/maps/5WPKLLHoT8fs13Lt8"
+                    target="_blank"
+                    >Україна, м. Київ, вул. Тараса Шевченка 5</a
+                  >
+                </li>
+              </div>
+              <div class="icons-custom__footer">
                 <li class="icons-custom__footer-icons-nav">
                   <a href="tel:+380960000007">
                     <svg width="32" height="32">
@@ -537,7 +574,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <div class="backdrop is-hidden">
       <div class="modal">

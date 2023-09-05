@@ -1,6 +1,11 @@
 .data-in-save {
   font-size: 13px;
   color: var(--colour-footer-data);
+  text-align: center;
+
+  @media screen and (min-width: $bp-tablet) {
+    text-align: start;
+  }
 }
 
 .custom-card {
